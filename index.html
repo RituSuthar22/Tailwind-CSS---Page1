@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Page1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-0 p-0 border-box font-['Lato'] overflow-x-hidden">
+    <!-- header -->
+
+    <header class="border border-gray-200">
+        <div class="bg-gray-100">
+            <!-- RESPONSIVE: stack on mobile, row on md+ -->
+            <div class="max-w-6xl mx-auto px-2 py-2 flex flex-col gap-2 md:flex-row items-center justify-between bg-gray ">
+
+                <!-- Left: contact info -->
+                <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 md:gap-8 text-xs text-gray-500 font-semibold">
+                    <li class="flex items-center gap-2">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>(+88) 888 123 789</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Contact@gmail.com</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>193 Road Glasgow</span>
+                    </li>
+                </ul>
+
+                <!-- Right: social icons -->
+                <ul class="flex items-center gap-5 text-gray-500">
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-google"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-vimeo"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="hover:text-amber-400"><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white">
+            <!-- RESPONSIVE: logo above menu on mobile -->
+            <div class="max-w-6xl mx-auto px-2 py-2 flex flex-col gap-2 md:flex-row items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-3xl font-bold text-amber-400">Visla</a>
+                <!-- Menu -->
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 md:gap-10 text-xs font-semibold uppercase text-gray-500 font-semibold">
+                        <li><a href="#" class="text-amber-400">Home</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Pages</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Services</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Project</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Shop</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Blog</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- hero section -->
+  
+    <section class="flex flex-col h-[350px] sm:h-[450px] md:h-[550px] bg-cover bg-center bg-no-repeat
+  bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('section1_image.png')]">
+
+        <div class="flex-1 flex flex-col items-center justify-center text-center text-white px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl uppercase font-semibold">Building Your Dream</h1>
+            <p class="mt-4 text-sm md:text-lg">We can build anything you want</p>
+            <a href="#" class="mt-6 md:mt-10 bg-[#fbb500] text-white px-6 py-3 md:px-8 md:py-4 text-sm font-bold uppercase">Our Project</a>
+        </div>
+    </section>
+    <!-- yellow strip section -->
+    <div class="bg-yellow-400 py-6">
+       
+        <div class="flex flex-col gap-4 text-center md:flex-row md:text-left items-center justify-between max-w-5xl mx-auto px-4">
+            <div class="p-2 flex flex-col gap-1 ">
+                <h2 class="text-xl md:text-2xl font-extrabold text-white">MAKING DREAMS COME TO LIFE</h2>
+                <p class="text-white text-xs">Quality is what we pursue, We know what we do</p>
+            </div>
+            <a href="#" class="bg-white px-4 py-4 font-bold text-xs">GET A QUOTE</a>
+        </div>
+    </div>
+    <!-- services section -->
+    <section class="bg-white py-10 md:py-16 max-w-6xl mx-auto">
+        <div class="max-w-5xl mx-auto px-4"> <!-- container -->
+            <!-- Title + underline -->
+            <div class="flex flex-col items-center max-w-5xl mx-auto px-4">
+                <h2 class="text-xl font-bold uppercase">Our Services</h2>
+                <div class="w-14 h-[3px] bg-[#fbb500] mt-3"></div> <!-- yellow underline -->
+            </div>
+
+            <!-- tabs icons -->
+            <!-- RESPONSIVE: tabs wrap into 2 rows of 3 on mobile (w-1/3), single row on md+ -->
+            <div class="group flex flex-wrap md:flex-nowrap border-b border-gray-200 mt-8 md:mt-12 max-w-5xl mx-auto px-4">
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-transparent -mb-px focus:border-[#fbb500]"> <!-- tab 1 -->
+                    <i class="bi bi-rulers text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Design</span>
+                </div>
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-[#fbb500] group-focus-within:border-transparent focus:border-[#fbb500] -mb-px">
+                    <!-- tab 2 (active) -->
+                    <i class="bi bi-hammer text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Electric</span>
+                </div>
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-transparent -mb-px focus:border-[#fbb500]"> <!-- tab 3 -->
+                    <i class="bi bi-truck text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Transport</span>
+                </div>
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-transparent -mb-px focus:border-[#fbb500]"> <!-- tab 4 -->
+                    <i class="bi bi-droplet-fill text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Water</span>
+                </div>
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-transparent -mb-px focus:border-[#fbb500]"> <!-- tab 5 -->
+                    <i class="bi bi-building text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Building</span>
+                </div>
+
+                <div tabindex="0" class="w-1/3 md:w-auto md:flex-1 flex flex-col items-center gap-2 py-3 md:py-0 md:pb-4 cursor-pointer outline-none
+        border-b-[3px] border-transparent -mb-px focus:border-[#fbb500]"> <!-- tab 6 -->
+                    <i class="bi bi-buildings text-3xl text-[#fbb500]"></i>
+                    <span class="text-xs md:text-sm font-semibold text-gray-800">Infrastructure</span>
+                </div>
+
+            </div>
+
+            <!-- services description section -->
+
+            <!-- 3rd div: content row -->
+            <div class="flex flex-col gap-6 md:gap-10 mt-10 md:flex-row md:items-center">
+
+                <!-- left: image -->
+                <div class="w-full md:w-1/2">
+                    <img src="image2.png" alt="Electric Services" class="w-full h-auto object-cover">
+                </div>
+
+                <!-- right: text -->
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-900">Electric Services</h3>
+
+                    <p class="mt-4 text-sm leading-6 text-gray-600">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in
+                    </p>
+
+                    <p class="mt-3 text-sm leading-6 text-gray-600">
+                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                        passage. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+                        (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                    </p>
+
+                    <a href="#" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#fbb500]">
+                        Read More <i class="bi bi-chevron-double-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- why choose us section -->
+    <section class="bg-gray-100 py-10 md:py-16">
+        <!-- RESPONSIVE: stack on mobile -->
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <!-- Left: text -->
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold uppercase">Why Choose Us</h2>
+                <div class="w-12 h-1 bg-yellow-400 mt-3"></div>
+
+                <div class="flex flex-col gap-6 mt-8">
+
+                    <div class="flex gap-4">
+                        <i class="bi bi-people-fill text-xl text-yellow-400"></i>
+                        <div>
+                            <h3 class="font-bold">Architectural Designs</h3>
+                            <p class="text-gray-500 text-xs">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="bi bi-gear-wide-connected text-xl text-yellow-400"></i>
+                        <div>
+                            <h3 class="font-bold">Electrical System</h3>
+                            <p class="text-gray-500 text-xs">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <i class="bi bi-gem text-xl text-yellow-400"></i>
+                        <div>
+                            <h3 class="font-bold">Quality</h3>
+                            <p class="text-gray-500 text-xs">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right: image -->
+            <div class="w-full md:w-1/2">
+                <img src="worker.png" alt="Worker" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+
+    <section class="bg-white pt-10 md:pt-14">
+
+        <!-- 1st div: title + underline -->
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold uppercase">Our Projects</h2>
+            <div class="w-14 h-1 bg-yellow-400 mt-3"></div>
+        </div>
+
+        <!-- 2nd div: tabs -->
+        <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 md:gap-8 px-4 mt-8 md:mt-10 mb-8 md:mb-10 text-sm text-gray-600">
+            <a href="#" class="text-yellow-400">All-Project</a>
+            <a href="#" class="hover:text-yellow-400">Education</a>
+            <a href="#" class="hover:text-yellow-400">Office</a>
+            <a href="#" class="hover:text-yellow-400">Healthcare</a>
+            <a href="#" class="hover:text-yellow-400">Warehouse</a>
+        </div>
+
+        <!-- 3rd div-->
+        <div class="flex flex-wrap">
+
+            <!-- tile 1 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_1_1.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p1.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 2 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_1_2.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p2.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 3 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_1_3.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p3.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 4 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_1_4.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p4.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 5 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_2_1.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p5.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 6 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_2_2.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p6.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 7 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_2_3.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p7.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+            <!-- tile 8 -->
+            <div class="group flex flex-col items-center justify-center text-center w-1/2 md:w-1/4 h-52 sm:h-64
+      bg-cover bg-center bg-[url('building_2_4.png')]
+      hover:bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/p8.jpg')]">
+                <div
+                    class="flex flex-col items-center px-3 md:px-8 text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                    <h3 class="text-lg md:text-xl font-bold">Ware House</h3>
+                    <p class="mt-2 text-xs">While building a warehouse for an store is no easy feat itself, think about
+                        building...</p>
+                    <a href="#" class="mt-3 text-sm font-bold text-yellow-400">View More »</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- news section -->
+    <section class="py-10 md:py-16">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- Title + underline -->
+            <div class="flex flex-col items-center">
+                <h2 class="text-2xl font-bold uppercase">Latest News</h2>
+                <div class="w-14 h-1 bg-yellow-400 mt-3"></div>
+            </div>
+
+            <!-- Two columns: same level -->
+            <div class="flex flex-col md:flex-row md:items-start gap-8 mt-10">
+
+                <!-- Left: big post -->
+                <div class="flex-1">
+                    <img src="image2.png" alt="" class="w-full aspect-[10/7] object-cover">
+                    <h3 class="text-lg font-semibold mt-4">Future Proofing Hospital</h3>
+                    <div class="flex flex-wrap gap-x-6 text-xs text-gray-400 mt-1">
+                        <span><i class="bi bi-calendar3"></i> October 19, 2018</span>
+                        <span>|</span>
+                        <span><i class="bi bi-chat-dots"></i> 25 Comment</span>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-3">
+                        By improving the physical layout of hospitals and medical facilities, we can enhance and
+                        increase safety mechanisms, improve care, and...
+                    </p>
+                    <a href="#" class="inline-block mt-3 text-xs text-yellow-400">Read More <i
+                            class="bi bi-chevron-double-right"></i></a>
+                </div>
+
+                <!-- Right: 3 small posts -->
+                <div class="flex-1 flex flex-col gap-8">
+
+                    <!-- post 1 -->
+                    <div class="flex gap-4">
+                        <img src="worker.png" alt="" class="w-28 h-28 sm:w-44 sm:h-36 object-cover shrink-0">
+                        <div>
+                            <h3 class="font-semibold leading-tight">Central Villa Park</h3>
+                            <div class="flex flex-wrap gap-x-4 text-xs text-gray-400 mt-1">
+                                <span><i class="bi bi-calendar3"></i> October 19, 2018</span>
+                                <span>|</span>
+                                <span><i class="bi bi-chat-dots"></i> 05 Comment</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">By improving the physical layout of hospitals and
+                                medical facilities, we can enhance and increase safety</p>
+                            <a href="#" class="inline-block mt-2 text-xs text-yellow-400">Read More <i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- post 2 -->
+                    <div class="flex gap-4">
+                        <img src="building_2_3.png" alt="" class="w-28 h-28 sm:w-44 sm:h-36 object-cover shrink-0">
+                        <div>
+                            <h3 class="font-semibold leading-tight">Bike Parts Warehouse</h3>
+                            <div class="flex flex-wrap gap-x-4 text-xs text-gray-400 mt-1">
+                                <span><i class="bi bi-calendar3"></i> October 19, 2018</span>
+                                <span>|</span>
+                                <span><i class="bi bi-chat-dots"></i> 07 Comment</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">By improving the physical layout of hospitals and
+                                medical facilities, we can enhance and increase ...</p>
+                            <a href="#" class="inline-block mt-2 text-xs text-yellow-400">Read More <i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- post 3 -->
+                    <div class="flex gap-4">
+                        <img src="building_2_2.png" alt="" class="w-28 h-28 sm:w-44 sm:h-36 object-cover shrink-0">
+                        <div>
+                            <h3 class="font-semibold leading-tight">Joy Hotel &amp; Casino</h3>
+                            <div class="flex flex-wrap gap-x-4 text-xs text-gray-400 mt-1">
+                                <span><i class="bi bi-calendar3"></i> October 19, 2018</span>
+                                <span>|</span>
+                                <span><i class="bi bi-chat-dots"></i> 12 Comment</span>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">By improving the physical layout of hospitals and
+                                medical facilities, we can enhance and increase ...</p>
+                            <a href="#" class="inline-block mt-2 text-xs text-yellow-400">Read More <i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- dream project section -->
+    <section class="bg-gray-50 py-10 md:py-16">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+
+            <!-- Left: text -->
+            <div class="w-full text-center md:text-left md:w-1/2">
+                <h2 class="text-xl md:text-2xl font-bold uppercase">We Build Your Dream Project</h2>
+                <p class="text-xs text-gray-600 mt-4">
+                    Here are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.
+                </p>
+                <a href="#" class="inline-block bg-yellow-400 text-white font-bold uppercase text-sm px-8 py-3 mt-8">Get
+                    A Quote</a>
+            </div>
+
+            <!-- Right: image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="dream_project.png" alt="Worker" class="w-full max-w-xs md:max-w-none md:w-100">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="bg-gray-50 py-10 md:py-16">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- Top row: title on the left, arrows on the right -->
+            <div class="flex items-start justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold uppercase">Testimonials</h2>
+                    <div class="w-14 h-1 bg-yellow-400 mt-3"></div>
+                </div>
+                <div class="flex gap-2">
+                    <button class="bg-yellow-400 text-white w-6 h-6 flex items-center justify-center">
+                        <i class="bi bi-chevron-left text-xs"></i>
+                    </button>
+                    <button class="bg-gray-300 text-white w-6 h-6 flex items-center justify-center">
+                        <i class="bi bi-chevron-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cards row -->
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 mt-10">
+
+                <!-- card 1 -->
+                <div class="flex-1 bg-white border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJsKy91szYA6rkYmjerZGKQPMBLPr9S9o-8dIuflTLFw&s=10"
+                            alt="" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h3 class="font-bold text-sm">Mr. Chau</h3>
+                            <p class="text-xs text-yellow-400">Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-4 leading-5">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. Normal distribution of letters, as opposed to using 'Content here,
+                        content here'.
+                    </p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="flex-1 bg-white border border-gray-200 p-6">
+                    <div class="flex items-center gap-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYW6qXM96Zpwfrv_8mlyOiSEb_Qit9QywNcKQ4A8gKw&s=10"
+                            alt="" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h3 class="font-bold text-sm">Mr. John</h3>
+                            <p class="text-xs text-yellow-400">Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-4 leading-5">
+                        The others comfortable these days are all happy and free listen to a story now the world do not
+                        move to the beat of just one drum what might be right for you may not be story of a man.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- partners section -->
+    <section class="py-10 md:py-16">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- Top row: title on the left, arrows on the right -->
+            <div class="flex items-start justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold uppercase">Partner</h2>
+                    <div class="w-14 h-1 bg-yellow-400 mt-3"></div>
+                </div>
+                <div class="flex gap-2">
+                    <button class="bg-yellow-400 text-white w-6 h-6 flex items-center justify-center">
+                        <i class="bi bi-chevron-left text-xs"></i>
+                    </button>
+                    <button class="bg-gray-300 text-white w-6 h-6 flex items-center justify-center">
+                        <i class="bi bi-chevron-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logos row -->
+            <!-- RESPONSIVE: 3 logos per row on mobile (2 rows), 6 in one row on md+ -->
+            <div class="flex flex-wrap md:flex-nowrap border border-gray-200 mt-10">
+
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24 border-r border-b md:border-b-0 border-gray-200">
+                    <img src="logo1.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24 border-r border-b md:border-b-0 border-gray-200">
+                    <img src="logo2.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24 border-b md:border-b-0 md:border-r border-gray-200">
+                    <img src="logo3.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24 border-r border-gray-200">
+                    <img src="logo4.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24 border-r border-gray-200">
+                    <img src="logo5.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+                <div class="w-1/3 md:w-auto md:flex-1 flex items-center justify-center h-24">
+                    <img src="logo6.png" alt="" class="w-16 grayscale hover:grayscale-0">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+
+        <!-- Main footer -->
+        <div class="bg-[#222] text-gray-300 py-10 md:py-12">
+            <!-- RESPONSIVE: stack until lg so 4 columns have enough room -->
+            <div class="max-w-5xl mx-auto px-4 flex flex-col lg:flex-row gap-10">
+
+                <!-- Column 1: logo + text -->
+                <div class="flex-1">
+                    <h2 class="text-2xl font-bold text-[#fbb500]">Visla</h2>
+                    <p class="text-xs leading-6 mt-4">
+                        Construction's core values have been shaped over more than 7 years of the finest services.
+                    </p>
+                    <p class="text-xs leading-6 mt-4">
+                        We never tried to cut on either quality, the pace of work or any other construction.
+                    </p>
+                </div>
+
+                <!-- Column 2: navigation (two lists side by side) -->
+                <div class="flex-[1.5]">
+                    <h3 class="text-sm font-bold text-white">Navigation</h3>
+                    <div class="flex gap-10 mt-4 text-xs">
+                        <ul class="flex flex-col gap-3">
+                            <li><a href="#" class="text-[#fbb500]">Home</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">About</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Services</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Project</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Blog</a></li>
+                        </ul>
+                        <ul class="flex flex-col gap-3">
+                            <li><a href="#" class="hover:text-[#fbb500]">Contact</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Our Team</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">New Latest</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Our Partner</a></li>
+                            <li><a href="#" class="hover:text-[#fbb500]">Suport</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: working hours -->
+                <div class="flex-1">
+                    <h3 class="text-sm font-bold text-white">Working Hours</h3>
+                    <p class="text-xs leading-6 mt-4">
+                        Our support available to help you 24 hours a day, seven days a week.
+                    </p>
+                    <div class="text-xs leading-6 mt-3">
+                        <p>Working Days: Mon. - Fri</p>
+                        <p>Working Hours: 9.00AM - 5.00PM</p>
+                        <p>Support: 24/7</p>
+                    </div>
+                </div>
+
+                <!-- Column 4: subscribe -->
+                <div class="flex-1">
+                    <h3 class="text-sm font-bold text-white">Subcribe</h3>
+                    <p class="text-xs leading-6 mt-4">
+                        Subscribe to our newsletter to receive exclusive offers and the latest news on our products and
+                        services.
+                    </p>
+                    <div class="flex items-center bg-[#333] mt-5">
+                        <input type="email" placeholder="Email..."
+                            class="flex-1 min-w-0 bg-transparent text-xs italic px-4 py-3 outline-none text-white placeholder-gray-400">
+                        <button class="px-4 text-[#fbb500]"><i class="bi bi-send-fill"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="bg-[#161616] py-4 flex justify-center px-4 text-center">
+            <p class="text-xs text-gray-400">Copyrights Visla © 2017 All right reserved</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
